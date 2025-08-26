@@ -1,0 +1,99 @@
+/* canais yt do mount */
+:root {
+   --card-yt-background-mount: #35648C;
+   --card-yt-background-mountgameplays: #d0478e;
+   --card-yt-background-mountcortes: #d57d70;
+   --card-yt-background-mountvods: #c5b594;
+   --card-yt-background-mountlives: #87a8ae;
+   
+   --perfil-nrclgs-mount: #bcac94;
+   --perfil-nrclgs-cap: #668aae;
+   --perfil-nrclgs-calango: #2c3e3e;
+   --perfil-nrclgs-alan: #5a2e29;
+   --perfil-nrclgs-galagol: #8c5d44;
+   --perfil-nrclgs-mrfall: #5c758e;
+}
+
+/* canal mount */
+#card-yt-mount {
+    background: var(--card-yt-background-mount);
+    color: var(--cor-fonte-p);
+}
+#card-yt-mount li {
+    color:  var(--fonte-preto);
+}
+#card-yt-mount li::selection{
+    color: white;
+}
+
+
+/* canal mount gameplays */
+#card-yt-mountgameplays {
+    background: var(--card-yt-background-mountgameplays);
+    color: var(--cor-fonte-p);
+}
+#card-yt-mountgameplays li {
+    color:  var(--fonte-lightgray);
+}
+
+
+
+/* canal mount lives */
+#card-yt-mountlives {
+    background: var(--card-yt-background-mountlives);
+    color: var(--cor-fonte-p);
+}
+#card-yt-mountlives li {
+    color:  var(--fonte-lightgray);
+}
+
+
+
+/* canal mount vods */
+#card-yt-mountvods {
+    background: var(--card-yt-background-mountvods);
+    color: var(--cor-fonte-p);
+}
+#card-yt-mountvods li {
+    color:  var(--fonte-lightgray);
+}
+
+/* canal visao geral */
+#card-yt-mount-visaogeral {
+    background-image: linear-gradient(
+        90deg,
+        var(--card-yt-background-mountlives) 0%,
+       /*  var(--card-yt-background-mountlives) 50% */
+        var(--card-yt-background-mount) 100%
+    );
+}
+
+
+/* canal mount cortes */
+#card-yt-mountcortes {
+    background: var(--card-yt-background-mountcortes);
+    color: var(--cor-fonte-p);
+}
+#card-yt-mountcortes li {
+    color:  var(--fonte-lightgray);
+}
+
+
+#perfil-nrclgs-mount {
+    background-color: var(--perfil-nrclgs-mount);
+}
+#perfil-nrclgs-alan {
+    background-color: var(--perfil-nrclgs-alan);
+}
+#perfil-nrclgs-cap {
+    background-color: var(--perfil-nrclgs-cap);
+}
+#perfil-nrclgs-calango {
+    background-color: var(--perfil-nrclgs-calango);
+}
+#perfil-nrclgs-galagol {
+    background-color: var(--perfil-nrclgs-galagol);
+}
+#perfil-nrclgs-mrfall {
+    background-color: var(--perfil-nrclgs-mrfall);
+}

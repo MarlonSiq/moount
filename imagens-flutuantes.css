@@ -1,0 +1,94 @@
+.float-img{
+    position: absolute;
+    /* border: solid 2px red; */
+}
+.flutuar {
+    animation: flutuar 3s ease-in-out infinite;
+}
+.flutuar-2 {
+    animation: flutuar 5s ease-in-out infinite;
+}
+.rotacionar {
+    animation: rotacionar 8s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+}
+.rotacionar-2 {
+    animation: rotacionar-2 8s ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+}
+
+.img1 { /* redbull */
+    width: 118px;
+    top: 6%;
+    left: -4%;
+}
+.img2 { /* mount geoguessr master 1 */
+    width: 110px;
+    bottom: 15%;
+    left: -4%;
+    animation: flutuar 3s ease-in-out infinite;
+}
+.img3 { /* pin de mapa do geoguessr */
+    width: 75px;
+    bottom: -8%;
+    right: 7%;
+}
+.img4 { /* emoji console */
+    width: 75px;
+    bottom: -8%;
+    left: 10%;
+}
+.img5 { /* emoji tigre */
+    width: 85px;
+    bottom: 35%;
+    right: -3%;
+}
+.img6 { /* tecla da letra M */
+    width: 70px;
+    top: -5%;
+    right: 7%;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50%{ transform: translateY(-10px); }
+    100%{ transform: translateY(0); }
+}
+
+
+@keyframes rotacionar {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(18deg); }
+    75% { transform: rotate(-18deg); }
+    100%{ transform: rotate(0deg); }
+}
+
+@keyframes rotacionar-2 {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100%{ transform: rotate(0deg); }
+}
+.img-favicon-mount {
+    width: 60px;
+    bottom: 33%;
+    left: -2%;
+}
+/* inicio imagem para perfil dos narcolegas */
+.img-icon {
+    width: 100px;
+    top: -5%;
+    left: -5%;
+    /* border-radius: 80px; */
+    border-radius: 100%;
+    border: 2px solid white;
+}
+/* fim imagem para perfil dos narcolegas */
+
+.logo-comunication{
+    width: 60px;
+    top: 20%;
+    right: 15%;
+}

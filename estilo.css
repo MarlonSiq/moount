@@ -1,0 +1,723 @@
+:root {
+        /*Padrão do site*/
+    --cor-fundo: #2E3038; /*Cor do fundo das páginas*/
+    --cor-back-box: #16171A;/* cor de fundo do banner principal */
+    --cor-pure-white: white;
+    --cor-pure-lightgray: #5e5f64;
+    --cor-fonte-box: white;
+    --cor-fonte-p: white;
+    --fonte-preto: black;
+    --fonte-lightgray: lightgray;
+    --fonte-gray: gray;
+    
+    --cor-background-sobre-mim: white;
+    --cor-background-twitch: #8148D1;
+    --cor-background-youtube: #CB1133;
+    --cor-background-instagram: #D600AB;
+    --cor-background-whatsapp: green;
+    --cor-background-discord: blue;
+    
+    --cor-background-botao-flutuante: gray;
+    --cor-background-box-narcolegas: rgb(43, 209, 43);
+    --cor-background-box-canaisyoutube: red;
+    --cor-background-box-infodesktop: #584ecc;
+    --cor-background-box-wiki: #9000d3;
+    
+
+        /*Cores de ::Selection*/
+    --cor-selection-index:#9800fd;
+    --cor-selection-sobre-mim: lightgray;
+    --cor-selection-twitch: #9000d3;
+    --cor-selection-youtube: #ff1c1c;
+    --cor-selection-instagram: #D600AB;
+    
+    --cor-selection-yt-mount: #2b6dff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+    cursor: url('imagens/cursor2-auto.png'), auto;
+}
+
+.holder:hover {
+    cursor: url('imagens/cursor3-pointer.png'), pointer;
+}
+
+
+h1, h2, h3, h4, h5, #typing-text{
+    font-family: 'Montserrat', sans-serif;
+}
+p, a,.sub-banner-site, ul, li, h6, #botao-menu{
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px; /* antes 20px */
+    /* text-align: justify; */
+    color: var(--cor-fonte-p);
+    
+} 
+
+::selection{
+    background: var(--cor-selection-index);
+    color: var(--fonte-preto);
+}
+
+.narcolegas::selection {
+    background: #e4f30c;
+    color: var(--fonte-preto);
+}
+.a::selection {
+    background: #e4f30c;
+    color: var(--fonte-preto);
+}
+.gradient-text::selection{
+    color: var(--cor-fonte-p);
+}
+.container-apresentacao {
+    gap: 80px;
+}
+/* tamanho de fonts */
+.p {
+    width: 500px;
+    display: block;
+    text-align: stretch;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--cor-fonte-p);  
+} 
+
+.pp {
+    width: 60%;
+    display: block;
+    text-align: center;
+    font-size: 17px; /* antes 20px */
+    text-align: center;
+    color: var(--cor-fonte-p);  
+} 
+.ppp {
+    width: 840px;
+    display: block;
+    text-align: stretch;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--cor-fonte-p);  
+} 
+
+h2 {
+    font-size: 35px; /* texto gradiente, antes 38px */ 
+    
+ }
+h3 {
+    font-size: 50px; /* texto da class="section-tittle-img" */
+}
+h4 {
+    font-size: 20px; /* texto dos cards na pagina youtube */
+}
+h5 {
+    font-size: 17px;
+}
+h6 {
+    font-size: 20px;
+}
+.infos-updated{
+    font-size: 13px;
+    color: var(--fonte-lightgray);
+}
+.ops{
+    font-size: 70px; 
+    
+}
+.button-textsize {
+    font-size: 15px;
+}
+.gradient-text {
+    display: inline-block;
+    color: transparent;
+    background-image: linear-gradient(
+        90deg,
+        var(--cor-background-twitch) 0%,
+        var(--cor-background-instagram) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* -webkit-text-stroke: 1px white;
+    text-stroke: 1px white;
+    text-shadow:
+    -1px -1px 0 white,
+    -1px 1px 0 white,
+    1px -1px 0 white,
+    1px 0 0 white;  */
+    
+}
+
+/* para dar uma arredondada no banner principal e foto do mount */
+.banner-site, .container-colored, .container-colored-communication, .container-colored-me-acompanhe, .container-narcolegas, footer, #foto-mount, .section-tittle-img {
+    border-radius: 30px;
+}
+/* arredondada nos botões */
+a.button, #button-sobre-mim, .button-whatsapp, .button-twitch, a.button-mini, a.button-mini-indi{
+    border-radius: 10px;
+}
+/* banner principal */
+.banner-site{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    box-shadow: inset 0 0 100px 20px var(--cor-background-twitch); /* x, y, blur, expansão interna */
+    font-size: 55px;
+    background-color: var(--cor-back-box);
+    color: var(--cor-fonte-box);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.container-colored{ 
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    font-size: 60px;
+    background-color: var(--cor-back-box);
+    color: var(--cor-fonte-box); 
+    padding-top: 40px; 
+    padding-bottom: 90px;   
+    gap: 40px;
+}
+.container-colored-communication{ 
+    position: relative;
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    font-size: 60px;
+    background-color: var(--cor-back-box);
+    color: var(--cor-fonte-box); 
+    padding: 60px 0px 60px 0px; 
+    /* padding-bottom: 90px;  */ 
+    gap: 10px;
+}
+.container-colored-communication img {
+    border-radius: 10px;
+}
+
+.container-colored-me-acompanhe{ 
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    background-color: var(--cor-back-box);
+    color: var(--cor-fonte-box); 
+    padding-top: 40px; 
+    padding-bottom: 90px;   
+    gap:10px;
+}
+/* .container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+            width: 700px;
+            height: auto;
+            background: gray;
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+} */
+
+.section-tittle-img{
+    width: 1200px;
+    height: auto;
+    background: var(--cor-back-box);
+    text-align: center;
+    color: var(--cor-pure-white);
+    display: flex;
+   flex-direction: rown;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+#section-tittle-narcolegas {
+   /* box-shadow: inset 0 0 50px 20px var(--cor-background-box-narcolegas); /* x, y, blur, expansão interna */
+    background: var(--cor-background-box-narcolegas);
+}
+#section-tittle-canaisyoutube {
+    background: var(--cor-background-youtube);
+}
+#section-tittle-infodesktop {
+    background: var(--cor-background-box-infodesktop);
+}
+#section-tittle-wiki {
+    background: var(--cor-background-box-wiki);
+}
+
+/* .section-tittle-img{
+    width: 1200px;
+    height: auto;
+    background: var(--cor-background-box-narcolegas);
+    text-align: center;
+    color: var(--cor-pure-white);
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+} */
+
+.img {
+margin-left: 70px;
+width: 100px;
+    
+}
+
+.imagem-canais-comunicacao{
+    width: 250px;
+}
+/* h2.section-tittle{
+    font-size: 200px;
+} */
+
+/* box das paginas secundarias */
+.sub-banner-site {
+   display: flex;
+   flex-direction: column;
+   /*gap-top: 10px;*/
+   width: 700px; 
+   height: 70px;
+  /*background: var(--cor-background-twitch); */
+   font-size: 20px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-radius: 20px;
+}
+
+
+
+.jogos{
+    width: 500px;
+    aspect-ratio: 16 / 9;
+    background: var(--cor-background-botao-flutuante);
+    border-radius: 10px;
+    border: 1.5px solid var(--cor-pure-white);
+}
+
+.tema-live{ 
+    width: 500px;
+    height: 100px;
+    display: flex;               /* ATIVO FLEXBOX */
+    justify-content: center;     /* Alinha horizontalmente */
+    align-items: center;
+   /* justify-content: center; */
+    background: black; /* remover depois */
+    color: var(--cor-fonte-box);
+    text-align: cente4;
+   /* padding-top:5px;  
+    padding-bottom:5px; */  
+}
+
+/* .text {
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            background: black;
+            color: var(--cor-pure-white);
+} */
+        
+.container-clear {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+} 
+.container-clear-gap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:90px;
+} 
+
+a:hover,
+a:visited,
+a:active {
+  color: var(--cor-pure-white);
+  text-decoration: none;
+  }
+
+
+a.button {
+    display: inline-block;
+    width: 500px;
+    height: 40px;
+    line-height: 40px; /* alinhar o texto */
+    padding: 12px 0px;
+    text-align: center;
+    background: var(--cor-back-box);
+    color: var(--cor-pure-white);
+    font-weight: bold;
+    text-decoration: none;
+    /*border-radius:10px;*/
+    /* cursor: pointer; */
+    }
+a.button-mini {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    line-height: 40px; /* alinhar o texto */
+    padding: 12px 0px;
+    text-align: center;
+    background: var(--cor-back-box);
+    color: var(--cor-pure-white);
+    font-weight: bold;
+    text-decoration: none;
+    /*border-radius:10px;*/
+    /* cursor: pointer; */
+}
+a.button-large {
+    display: inline-block;
+    width: 650px;
+    height: 40px;
+    line-height: 40px; /* alinhar o texto */
+    padding: 12px 0px;
+    text-align: center;
+    /* background: var(--cor-pure-lightgray); */
+    color: var(--cor-pure-white);
+    font-weight: bold;
+    text-decoration: none;
+    /*border-radius:10px;*/
+    /* cursor: pointer; */
+}
+
+a.button-mini-indi {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    line-height: 40px; /* alinhar o texto */
+    padding: 12px 0px;
+    text-align: center;
+    background-color: #4b347c;
+    color: var(--cor-pure-white);
+    font-weight: bold;
+    text-decoration: none;
+    /*border-radius:10px;*/
+    /* cursor: pointer; */
+}
+
+
+a.button.button-twitch {
+    background-color: var(--cor-background-twitch); 
+}
+a.button.button-youtube {
+    background-color: var(--cor-background-youtube); 
+}
+a.button.button-instagram {
+    background-color: var(--cor-background-instagram); 
+}
+
+a.button-mini.button-twitch {
+    background-color: var(--cor-background-twitch);   
+}
+a.button-mini.button-whatsapp {
+    background-color: var(--cor-background-whatsapp); 
+}
+a.button-mini.button-discord {
+    background-color: var(--cor-background-discord); 
+}
+a.button-mini.button-instagram{
+    background-color: var(--cor-background-instagram); 
+}
+.button-instagram {
+    background-color: var(--cor-background-instagram); 
+}
+
+#button-twitch {
+    background: var(--cor-background-twitch);
+}
+#button-youtube {
+    background: var(--cor-background-youtube);
+}
+#button-instagram {
+    background: var(--cor-background-instagram);
+}
+#button-sobre-mim {
+    background: var(--cor-background-sobre-mim);
+    color: var(--fonte-preto);
+}
+
+#foto-mount {
+    width: 700px;
+    height: auto;
+}
+
+#container-colored-border-twitch {
+    border: 2px solid var(--cor-background-twitch);
+}
+#container-colored-border-whatsapp {
+    border: 2px solid var(--cor-background-whatsapp);
+}
+#container-colored-border-discord {
+    border: 2px solid var(--cor-background-discord);
+   /*  box-shadow: inset 0 0 50px 20px var(--cor-background-whatsapp); /* x, y, blur, expansão interna */
+}
+#container-colored-border-instagram {
+    border: 2px solid var(--cor-background-instagram);
+}
+
+/* container dos nomes dos Narcolegas */
+.container-narcolegas {
+    width: 700px;
+    background: var(--cor-back-box);
+
+    height: auto;
+    display: flex;
+    flex-direction: rown;
+    justify-content: center; 
+    align-items: center;   
+    padding: 60px 0px 90px 0px;
+    /*text-transform: uppercase; todas letras em maiuscula*/
+    gap: 50px;
+}
+.text-narcolegas-left {
+    width: 120px;
+    height: auto;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left; 
+    align-items: left;  
+    gap: 10px;
+}
+.text-narcolegas-right {
+    width: 120px;
+    height: auto;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: right;  
+    gap: 10px;
+}
+/* texto nomes dos Narcolegas*/
+a.a{
+ color: var(--cor-background-box-narcolegas);
+    text-decoration: none;
+    font-weight: 600;
+   
+}
+.banner-site{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    
+    font-size: 60px;
+    background-color: var(--cor-back-box);
+    color: var(--cor-fonte-box);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+    height: 250px;
+    margin-top:180px;
+    margin-bottom: 40px;
+    color: var(--cor-fonte-box);
+    background-color: var(--cor-back-box);
+    box-shadow: inset 0 0 80px 5px var(--cor-background-twitch); 
+                  /* x, y, blur, expansão interna */
+     
+}
+
+.socail-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.socail-icons a {
+    color: var(--cor-pure-white);
+    font-size: 24px;
+    background:;
+    padding: 5px 10px;
+}
+.icon-seta {
+   font-size: 30px;
+   rotate: 45deg;
+}
+.container-footer-width { /* para o espacamento dos 3 elementos do footer 1, ficarem equivalentes */
+    width: 200px;
+    background:;
+}
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 200px;
+    /* padding-top: 40px; */
+    background: ;
+}
+.footer-2{
+    text-align: center;
+    /* padding-bottom: 40px; */
+    background: ;
+}
+#footer-2-Createdby p{
+    color: var(--fonte-gray);
+    font-size: 17px;
+}
+h3 {
+    scroll-margin-top:100px;
+}
+#sub-banner.19061841 {
+   scroll-margin-top:600px;
+}
+.grid-container {
+    scroll-margin-top:100px
+}
+/* animacao para perfis */
+#typing-text {
+    font-size: 100px;
+    white-space: nowrap;
+    border-right: 4px solid var(--cor-fonte-p);
+    animation: blink 0.7s steps(1) infinite;
+    width: fit-content;
+    min-height:140px;
+}
+@keyframes blink {
+    0%, 100% {border-color: transparent;}
+    50% {border-color: var(--cor-selection-index);}
+}
+
+
+/* botão primario */
+#botao-menu {
+  border: none;
+  padding: 20px 40px;
+  background: none;
+  color: var(--cor-fonte-p);
+ /* cor personalizada */
+  /* background-color: var(--cor-background-botao-flutuante); */
+  box-shadow: inset 0 0 20px 0px var( --cor-pure-white); /* x, y, blur, expansão interna */
+  color: var(--cor-fonte-p);
+  backdrop-filter: blur(25px);
+  border-radius: 15px;
+  /* fim cor personalizada */
+  border-radius: 15px;
+  
+  font-size: 30px;
+  font-weight: bold;
+  /* cursor: pointer; */
+}
+/* secao de conteudos */
+.menu-conteudo {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  right: 120px;
+  /* background-color: #222; */
+  padding: 20px 20px;
+/*   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
+  
+  /* cor personalizada */
+  /* background-color: var(--cor-background-botao-flutuante); */
+  box-shadow: inset 0 0 20px 0px var( --cor-pure-white); /* x, y, blur, expansão interna */
+  color: var(--cor-fonte-p);
+  backdrop-filter: blur(25px);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  /* fim cor personalizada */
+  /* cursor: pointer; */
+}
+
+.menu-conteudo a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 40px;
+  transition: 0.2s;
+  /* cursor: pointer; */
+}
+.menu-conteudo a {
+  cursor: url('imagens/cursor3-pointer.png'), pointer;
+}
+
+.menu-conteudo a:hover {
+  /* cor personalizada */
+  /* background-color: var(--cor-background-botao-flutuante); */
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  /* fim cor personalizada */
+ /*  cursor: pointer; */
+ 
+}
+
+.menu-flutuante-back {
+  position: fixed;
+  top: 90px;
+  left: 20px;
+  padding: 20px 40px;
+  /* cor personalizada */
+  /* background-color: var(--cor-background-botao-flutuante); */
+  box-shadow: inset 0 0 20px 0px var( --cor-pure-white); /* x, y, blur, expansão interna */
+  color: var(--cor-fonte-p);
+  backdrop-filter: blur(25px);
+  border-radius: 15px;
+  /* fim cor personalizada */
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 800; /* garante que fique por cima */
+  /* cursor: pointer; */
+  
+}
+
+.menu-flutuante-sidebar {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  /* padding: 20px 40px;
+  background-color: var(--cor-background-botao-flutuante);
+  color: var(--fonte-preto);
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 8px; */
+  text-decoration: none;
+  z-index: 800; /* garante que fique por cima */
+  /* cursor: pointer; */
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);*/
+  /* cursor: pointer; */
+}
+
+.menu-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}

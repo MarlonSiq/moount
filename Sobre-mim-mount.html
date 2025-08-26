@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>[Sobre mim]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilo-2.css">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="cores.css">
+    <link rel="stylesheet" href="imagens-flutuantes.css">
+    <link rel="icon" href="imagens/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/28554f1995.js" crossorigin="anonymous"></script>
+    <style>
+        ::selection{
+    background: var(--cor-selection-sobre-mim);
+    color: var(--fonte-preto);
+        }
+    </style>
+</head>
+<body>
+    <a href="javascript:history.back()" class="menu-flutuante-back">Voltar</a>
+    
+     <!-- menu sidebar flutuante -->    
+<div class="menu-flutuante-sidebar holder">
+  <button id="botao-menu">☰</button>
+
+  <div class="menu-conteudo" id="conteudo-menu">
+    <a href="index.html">Início</a>
+    <a href="page-twitch.html">Twitch</a>
+    <a href="page-youtube.html">YouTube</a>
+    <a href="page-instagram.html">Instagram</a>
+    <a href="index.html#h3-220621Nar">Narcolegas</a>
+    <a href="index.html#h3-220621Wiki">Wiki</a>
+    <a href="sobre-o-projeto.html">Sobre o proj.</a>
+  </div>
+</div>
+<script src="menu.js"></script>
+<!-- fim menu sidebar flutuante -->   
+    
+    <div class="banner-site">
+        <div id="typing-text"></div>
+        <!-- <h1>Mount</h1> -->
+    </div>
+    <div class="sub-banner-site margin--140" id="button-sobre-mim" >SOBRE MIM</div>
+    <p class="p margin--50">
+        Olá, eu sou o Gabriel Montresor, mais conhecido como Mount. Nasci em São Paulo, em 1999, porém estou constantemente no RJ (casa nova).<br><br>
+Comecei a fazer lives em 2016, e com o tempo as coisas foram crescendo. Em 2020, fiz lives por 8 horas por dia e joguei bastante GTA Roleplay, entre outros jogos.Atualmente, faço lives na Twitch e no YouTube, de jogos como o querido Geoguessr e outros com os colegas. De vez em quando, também gravo uns vídeos das viagens e de corridas de kart.
+    </p>
+    
+    <!-- perfil narcolegas mount -->
+        <div class="grid-container" id="div-220616m">
+        <!-- card 1 -->
+                <div class="card-perfil-narcolegas" id="perfil-nrclgs-mount">
+                    <img src="imagens/canal-mountlives.jpeg" class="float-img img-icon"alt=""> <!--fotocanalyt -->
+                    <img src="imagens/perfil-mount.jpg" class="imagem-canal"alt=""> <!-- foto perfil -->
+                    <h5>Gabriel Camargo Montresor</h5>
+                    <ul class="li-nar">
+                    <li>mount</li>
+                    </ul>
+                </div>
+            <div class="grid-bloco" id="perfil-nrclgs-mount">
+                <!-- card 2 -->
+                <div class="card-perfil-narcolegas-list" id="perfil-nrclgs-mount" id="card-pfl-nrclgs-lst-right">
+                    <ul class="li-nar geregotango">
+                    <li id="none-geregotango">Ocupação: Streamer & Youtuber</li>
+                    <li>Nacionalidade: Brasileiro</li>
+                    <li>Natural de: São Paulo</li>
+                    <li>Reside em: São Paulo & Resende, RJ</li>
+                    <li>Nascimento: 29 de janeiro de 1999</li>
+                    </ul>
+                </div>
+                <!-- card 3 -->
+                <div class="card-perfil-narcolegas-list" id="perfil-nrclgs-mount" id="card-pfl-nrclgs-lst-left">
+                    <ul class="li-nar geregotango">
+                    <li id="none-geregotango">Gênero: gameplay</li>
+                    <li>Atividade: 2016 - Atualmente</li>
+                    <!-- <li>Geregotango</li> -->
+                    <li>♡ Natz</li>
+                    <li>Alma mater: ESPM, no curso de Comunicação e Publicidade (Trancada)</li>
+                    </ul>
+                </div>
+            </div>        
+    </div>
+
+<div class="sub-banner-site" id="button-sobre-mim" >Mais informações estarão disponíveis em breve!</div>
+
+    <p>cu</p>
+
+    <script>
+    window.onload = function () {
+    const textos = ["Mount", "Tigrezo", "Gabriel", "Mountzera", "Malte", "Gab", "Montresolis"];
+    let index = 0;
+    let charIndex = 0;
+    let escrevendo = true;
+    
+    const elemento = document.getElementById("typing-text");
+    
+    function digitar () {
+        if (escrevendo) {
+            if (charIndex < textos[index].length) {
+                elemento.textContent += textos[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(digitar, 100);
+            } else {
+                escrevendo = false;
+                setTimeout(digitar, 1500); //tempo até começar apagar
+            }
+        } else {
+            if (charIndex > 0) {
+                elemento.textContent = textos[index].substring(0, charIndex - 1);
+                
+                charIndex--;
+                setTimeout(digitar, 50);
+            } else {
+                escrevendo = true;
+                index = (index + 1) % textos.length;
+                setTimeout(digitar, 300);
+            }
+        }
+    }
+    
+    digitar();
+    }
+    </script>
+    
+<footer class="footer">
+    <div class="footer-1">
+            <div class="socail-icons container-footer-width">
+                <a href="https://www.twitch.tv/mount?sr=a" target="_blank" aria-label="Twitch" class="holder">
+                <i class="fa-brands fa-twitch" ></i>
+                </a>
+                <a href="page-youtube.html#h3-190600yt" target="_blank" aria-label="Youtube" class="holder">
+                <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="page-instagram.html#sub-banner.19061841" target="_blank" aria-label="Instagram" class="holder">
+                <i class="fa-brands fa-instagram"></i>
+                </a> 
+            </div>
+    <h2 class="mount-footer">Mount</h2>
+    <p class="container-footer-width">&copy; 2025</p>
+    </div>
+    
+    <div class="footer-2" id="footer-2-Createdby"><p id="footer-info"></p></div>
+</footer>
+<script src="texto-footer.js"></script>
+
+</body>
+</html>

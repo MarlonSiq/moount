@@ -1,0 +1,63 @@
+
+/* .banner-site:hover{
+    scale: 0.9;
+} */
+.button:hover,
+.jogos:hover,
+.a:hover,
+.button-mini:hover,
+.card-saibamais:hover,
+.float-img:hover {
+    scale: 1.08;
+}
+
+.mount-footer:hover {
+    scale: 1.1;
+}
+
+.card-setup:hover,
+.card:hover,
+.card-wiki:hover {
+    scale: 0.97;
+    
+}
+
+.button,
+.button-mini {
+    transition: background-color 0.8s ease-in-out, scale 0.3s ease-in-out;
+}
+.button.button-sobre-mim:hover {
+    background-color: lightgray;
+    color: black;
+    
+}
+
+.button,
+.jogos,
+.a,
+.button-mini,
+.float-img,
+.mount-footer,
+.card-setup,
+.card,
+.card-wiki {
+    transition: scale 0.2s ease-in-out;
+}
+
+#botao-menu:hover,
+.menu-flutuante-back:hover {
+    scale: 1.06;
+    border-radius: 80px;
+}
+
+#botao-menu,
+.menu-flutuante-back {
+    transition: scale 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+}
+
+.socail-icons a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    /* border: solid 1px white; */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
