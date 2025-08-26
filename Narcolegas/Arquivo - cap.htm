@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>[NRCLGS]: Cap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="../estilo-2.css">
+    <link rel="stylesheet" href="../cores.css">
+    <link rel="stylesheet" href="../hover.css">
+    <link rel="stylesheet" href="../imagens-flutuantes.css">
+    <link rel="icon" href="../imagens/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/28554f1995.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="javascript:history.back()" class="menu-flutuante-back">Voltar</a>
+     <!-- menu sidebar flutuante -->    
+<div class="menu-flutuante-sidebar holder">
+  <button id="botao-menu">☰</button>
+
+  <div class="menu-conteudo" id="conteudo-menu">
+    <a href="../index.html">Início</a>
+    <a href="../page-twitch.html">Twitch</a>
+    <a href="../page-youtube.html">YouTube</a>
+    <a href="../page-instagram.html">Instagram</a>
+    <a href="../index.html#h3-220621Nar">Narcolegas</a>
+    <a href="../index.html#h3-220621Wiki">Wiki</a>
+    <a href="../sobre-o-projeto.html">Sobre o proj.</a>
+  </div>
+</div>
+<script src="../menu.js"></script>
+<!-- fim menu sidebar flutuante -->   
+    
+    
+    <div class="banner-site">
+        <div id="typing-text"></div>
+        <!-- <h1>Mount</h1> -->
+    </div>
+    <div class="sub-banner-site margin--140" id="perfil-nrclgs-cap" id="button-sobre-mim" >PERFIL NARCOLEGAS: Cap</div>
+    
+    <p class="margin--70">↓↓</p>
+    
+    <div class="grid-container">
+        <!-- card 1 -->
+                <div class="card-perfil-narcolegas" id="perfil-nrclgs-cap">
+                    <img src="../imagens/canal-capjoga.jpeg" class="float-img img-icon"alt="">
+                    <img src="../imagens/perfil-cap.jpeg" class="imagem-canal"alt="">
+                    <h5>Luciano Pamplona</h5>
+                    <ul class="li-nar">
+                    <li>capuccino mafioso</li>
+                    </ul>
+                </div>
+            <div class="grid-bloco" id="perfil-nrclgs-cap">
+                <!-- card 2 -->
+                <div class="card-perfil-narcolegas-list" id="perfil-nrclgs-cap" id="card-pfl-nrclgs-lst-right">
+                    <ul class="li-nar geregotango">
+                    <li id="none-geregotango">Ocupação: Streamer & Youtuber</li>
+                    <li>Nacionalidade: Brasileiro</li>
+                    <li>Natural de: Florianópolis, SC</li>
+                    <li>Reside em: ...</li>
+                    <li>Nascimento: 16 de outubro de 1993</li>
+                    </ul>
+                </div>
+                <!-- card 3 -->
+                <div class="card-perfil-narcolegas-list" id="perfil-nrclgs-cap" id="card-pfl-nrclgs-lst-left">
+                    <ul class="li-nar geregotango">
+                    <li id="none-geregotango">Gênero: gameplay</li>
+                    <li>Atividade: 2012 - Atualmente</li>
+                    <!-- <li>Geregotango</li> -->
+                    <li>♡ Ana</li>
+                    <!-- <li>Alma mater: </li> -->
+                    </ul>
+                </div>
+            </div>        
+    </div>
+    
+    <script>
+    window.onload = function () {
+    const textos = ["Capuccino", "Cap", "Luis", "Lulu"];
+    let index = 0;
+    let charIndex = 0;
+    let escrevendo = true;
+    
+    const elemento = document.getElementById("typing-text");
+    
+    function digitar () {
+        if (escrevendo) {
+            if (charIndex < textos[index].length) {
+                elemento.textContent += textos[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(digitar, 100);
+            } else {
+                escrevendo = false;
+                setTimeout(digitar, 1500); //tempo até começar apagar
+            }
+        } else {
+            if (charIndex > 0) {
+                elemento.textContent = textos[index].substring(0, charIndex - 1);
+                
+                charIndex--;
+                setTimeout(digitar, 50);
+            } else {
+                escrevendo = true;
+                index = (index + 1) % textos.length;
+                setTimeout(digitar, 300);
+            }
+        }
+    }
+    
+    digitar();
+    }
+    </script>
+    
+<footer class="footer">
+    <div class="footer-1">
+            <div class="socail-icons container-footer-width">
+                <a href="https://www.twitch.tv/mount?sr=a" target="_blank" aria-label="Twitch" class="holder">
+                <i class="fa-brands fa-twitch" ></i>
+                </a>
+                <a href="../page-youtube.html#h3-190600yt" target="_blank" aria-label="Youtube" class="holder">
+                <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="../page-instagram.html#sub-banner.19061841" target="_blank" aria-label="Instagram" class="holder">
+                <i class="fa-brands fa-instagram"></i>
+                </a> 
+            </div>
+    <h2 class="mount-footer">Mount</h2>
+    <p class="container-footer-width">&copy; 2025</p>
+    </div>
+    
+    <div class="footer-2" id="footer-2-Createdby"><p id="footer-info"></p></div>
+</footer>
+<script src="../texto-footer.js"></script>
+
+</body>
+</html>
