@@ -6,6 +6,7 @@
 .jogos:hover,
 .a:hover,
 .button-mini:hover,
+.button-mini-indi:hover,
 .card-saibamais:hover,
 .float-img:hover {
     scale: 1.08;
@@ -23,7 +24,8 @@
 }
 
 .button,
-.button-mini {
+.button-mini,
+.button-mini-indi {
     transition: background-color 0.8s ease-in-out, scale 0.3s ease-in-out;
 }
 .button.button-sobre-mim:hover {
