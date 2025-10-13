@@ -303,7 +303,23 @@ a.button, #button-sobre-mim, .button-whatsapp, .button-twitch, a.button-mini, a.
     margin-bottom: 0px;
 }
 
-    
+.container-colored-projetos{ 
+    width: 840px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;   
+    background-color: var(--cor-back-box);
+    color: var(--cor-fonte-box); 
+    padding: 40px; 
+    padding-bottom:;
+    box-sizing: border-box;     
+    gap:;
+}
+.container-colored-projetos p{
+    font-size: 20px;
+}   
 
 .section-tittle-img{
     width: 1200px;
