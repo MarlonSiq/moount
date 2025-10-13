@@ -110,7 +110,9 @@ p, a,.sub-banner-site, ul, li, h6, #botao-menu{
     text-align: justify;
     color: var(--cor-fonte-p);  
 } 
-
+a {
+   font-size: 20px;
+}
 h2 {
     font-size: 35px; /* texto gradiente, antes 38px */ 
     
