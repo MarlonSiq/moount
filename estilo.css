@@ -158,7 +158,7 @@ h6 {
 }
 
 /* para dar uma arredondada no banner principal e foto do mount */
-.banner-site, .container-colored, .container-colored-communication, .container-colored-me-acompanhe, .container-narcolegas, .container-colored-features, footer, #foto-mount, .section-tittle-img {
+.banner-site, .container-colored, .container-colored-communication, .container-colored-me-acompanhe, .container-narcolegas, .container-colored-features,.container-colored-projetos, footer, #foto-mount, .section-tittle-img {
     border-radius: 30px;
 }
 /* arredondada nos botões */
