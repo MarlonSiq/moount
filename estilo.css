@@ -36,6 +36,7 @@
 
 html {
     scroll-behavior: smooth;
+    cursor: url('imagens/cursor2-auto.png'), auto;
 }
 body {
     background-color: var(--cor-fundo);
